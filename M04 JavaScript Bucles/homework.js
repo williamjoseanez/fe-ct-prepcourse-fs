@@ -195,6 +195,13 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
+   if (num % num === 0 || num % 1 === 0 ){
+      return true;
+   } else {
+      return false;
+   }
+//  if 
+//   }
    
 }
 
@@ -225,7 +232,16 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+//     let  num = 0;
+
+// do {
+//    num+=5;
+  
+// } 
+// while (num <= 40);
+
 }
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
