@@ -146,17 +146,18 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-
-   if (num % 3 === 0){
-      return "fizz";
-
-   }
-   if (num % 5 === 0){
-      return "buzz";
-   }
    if (num % 3 ===0 && num % 5 ===0){
       return "fizzbuzz"
    }
+
+   else if (num % 3 === 0){
+      return "fizz";
+
+   }
+   else if (num % 5 === 0){
+      return "buzz";
+   }
+  
    else {
       return false;
    }
@@ -195,15 +196,19 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if (num % num === 0 || num % 1 === 0 ){
-      return true;
-   } else {
-      return false;
+   // num = 5
+   // i = 2
+
+   if (num < 0 || num === 0 || num ===1) return false;
+   for (var i = 2; i < num; i++){
+      if (num % i === 0 ){
+         return false;
+      }
    }
-//  if 
-//   }
-   
+   return true;
 }
+
+
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
@@ -232,14 +237,18 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-//     let  num = 0;
-
-// do {
-//    num+=5;
+   var i = 8;
   
-// } 
-// while (num <= 40);
-
+   
+   do {
+    num = num + 5;
+     i = i - 1;
+   } 
+   
+   while (i > 0);
+   
+   return num;
+  
 }
 
 
